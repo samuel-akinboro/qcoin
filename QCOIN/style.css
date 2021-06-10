@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Rubik',
+    sans-serif;
+    background: #F1F1F3;
+    text-align: center;
+}
+
+/*  navigation */
+
+nav{
+    background: #0a1531;
+    width: 100%;
+    padding: 1em 0;
+    position: fixed;
+}
+
+nav .mobile-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo img{
+    width: 130px;
+    margin-top: 5px;
+}
+
+nav .container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+nav i{
+    color: white;
+    font-size: 1.4em;
+}
+
+.hide-mobile{
+    display: none;
+}
+
+.slide-out{
+    position: absolute;
+    top: 49px;
+    background: #0a1531;
+    height: 100vh;
+    right: -1000px;
+    transition: 0.6s;
+}
+
+.fa-times{
+    position: relative;
+    left: 32%;
+    margin: 1em 0;
+    font-size: 1.6em;
+}
+
+.slide-out li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    padding: 1em 0;
+    justify-content: space-between;
+    margin: 0 1.7em;
+}
+
+
+/* end of navigation */
+
+/*        header          */
+
+header{
+    height: 98vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/bg.jfif) no-repeat center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    z-index: 100;
+    padding: 6em 0;
+    color: white;
+    background-attachment: fixed;
+}
+
+header .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+form{
+    margin-top: 2em;
+    background: #EDEFF3;
+    text-align: left;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+}
+
+.select{
+    width: 50%;
+}
+
+.row input {
+    width: 50%;
+    border: none;
+    padding-left: 1em;
+}
+
+.row select{
+    width: 100%;
+    border: none;
+    padding: 0.5em;
+    font-weight: 600;
+    color: #414161;
+}
+
+.row select:focus{
+    outline: none;
+    border: none;
+}
+
+form span{
+    color: #414161;
+    padding: 0 0.4em;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.details p{
+    margin: 0.7em 0 1.3em 0;
+    font-size: 0.8em;
+}
+
+.details h1{
+    font-size: 1.7em;
+    line-height: 1.4em;
+}
+
+.details{
+    width: 100%;
+    padding: 1em 0 1em 0;
+    text-align: left;
+}
+
+header .btn{
+    background: rgb(245, 198, 45);
+    color: white;
+    font-size: 0.8em;
+    padding: 0.8em 0;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+}
+
+.details a{
+     background: #EEA900;
+     color: white;
+     font-size: 0.8em;
+     padding: 0.8em 12px;
+     text-decoration: none;
+     border-radius: 4px;
+     border: none;
+     width: 100%;
+}
+
+header .row{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin: 0.5em 0 1em 0;
+}
+
+/*       end of header       */
+
+
+
+/* why section */
+
+.why{
+    background: white;
+    margin-top: -30px;
+    padding-top: 2em;
+}
+
+.why .container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.why p{
+    font-size: 0.8em;
+    line-height: 1.6em;
+    margin: 1em 0 2em 0;
+    font-weight: 600;
+    color: rgb(24, 23, 23);
+}
+
+.why a{
+     background: #EEA900;
+     color: white;
+     font-size: 0.8em;
+     padding: 0.8em 19px;
+     text-decoration: none;
+     border-radius: 20px;
+     margin: 0.6em;
+}
+
+.why .small-btn{
+    padding: 0.8em 31px;
+    text-decoration: none;
+}
+
+.why img{
+    width: 60%;
+    margin-bottom: 2em;
+}
+
+.why .display{
+    margin: 2.7em auto;
+}
+
+.description p{
+    width: 95%;
+    margin: 1.5em auto;
+}
+
+/*    end of why section  */
+
+
+
+/* section for email verification */
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .box{
+    width: 80%;
+    background: white;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+section .container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-out a{
+    text-decoration: none;
+    color: white;
+}
+
+.box img{
+    margin: 1em 0;
+    width: 90px;
+}
+
+.box h4{
+    margin: 0 0 0.3em 0;
+    color: red;
+}
+
+
+
+.box p{
+    font-size: 0.7em;
+    margin: 0.5em 0 1em 0;
+}
+
+.box .btn{
+    background: #EEA900;
+    color: white;
+    font-size: 0.8em;
+    padding: 0.8em 0;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.box .btn2{
+    color: black;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.box input{
+    padding: 0.9em 1.5em;
+    width: 100%;
+    margin: 1em 0 1.8em 0;
+    border: 1px solid #D8D9DE;
+    color: #D8D9DE;
+    outline: none;
+    border-radius: 4px;
+}
+
+section .more-height .container{
+    margin: 1em auto 2em auto;
+}
+
+section .box span{
+    font-weight: 600;
+}
+
+/* end of email verification*/
+
+/* media queries */
+
+@media only screen and (min-width: 365px) {
+    .details p{
+        width: 90%;
+        /* line-height: 0.1em; */
+    }
+}
+
+@media only screen and (min-width: 407px) {
+    .details p {
+        width: 85%;
+        /* line-height: 0.1em; */
+    }
+
+    header{
+        height: 96vh;
+    }
+
+    .details{
+        width: 90%;
+        margin: 0.5em auto;
+    }
+
+    form{
+        width: 90%;
+        margin: 1em auto;
+    }
+}
+
+@media only screen and (min-width: 456px) {
+
+    .why p{
+        width: 90%;
+        margin: 2.5em auto;
+    }
+}
+
+@media only screen and (min-width: 465px) {
+
+    .details h1{
+        font-size: 1.7em;
+    }
+
+    .details p {
+        width: 80%;
+        line-height: 1.6em;
+    }
+
+    form {
+        padding: 1.7em 1em;
+    }
+
+    header{
+        height: 100vh;
+    }
+
+    .row select{
+        padding: 0.7em 0.5em;
+    }
+}
+
+@media only screen and (min-width: 490px) {
+
+    form {
+        margin-top: 1.9em;
+        padding: 1.9em 1em;
+    }
+
+    header {
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 525px){
+    .box p{
+        font-size: 0.8em;
+        width: 60%;
+    }
+
+    .box h4 {
+        font-size: 1.2em;
+    }
+
+    section .box {
+        width: 80%;
+        padding: 3em 2em;
+    }
+
+    .row select {
+        padding: 0.8em 0.5em;
+    }
+}
+
+@media only screen and (min-width: 531px) {
+    .details{
+        width: 95%;
+        font-size: 1.2em;
+    }
+
+    header{
+        padding-top: 3.3em;
+        height: 100vh;
+    }
+
+    form{
+        padding: 1.5em 1em;
+        width: 85%;
+        margin: 1em auto 1em 0.7em;
+    }
+}
+
+@media only screen and (min-width: 547px) {
+    .details {
+        margin: 2em auto 1.4em auto;
+        text-align: center;
+    }
+
+    .details h1{
+        font-size: 1.3em;
+    }
+
+    .details p{
+        width: 100%;
+        font-size: 0.7em;
+        margin-bottom: 2.4em;
+    }
+
+    form{
+        margin: 0 auto;
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 560px) {
+    .display img {
+        width: 50%;
+        margin: 1em auto;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .description p{
+        width: 77%;
+        margin: 1.2em auto 2em auto;
+        line-height: 1.9em;
+    }
+}
+
+@media only screen and (min-width: 647px) {
+    .details h1{
+        line-height: 1.7em;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .display img {
+        width: 40%;
+        margin: 1.8em auto;
+    }
+
+    .hide-mobile, .hide-mobile ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+    .account{
+        justify-content: center;
+    }
+
+    nav .container{
+        width: 90%;
+    }
+
+    .account a:nth-child(2){
+        border: 1px solid white;
+        padding: 0.7em 1em;
+        border-radius: 6px;
+        margin-left: 10px;
+    }
+
+    .hide-mobile li{
+        display: flex;
+        align-items: center;
+        padding: 0 0.5em;
+    }
+
+    .hide-mobile i{
+        font-weight: 600;
+        font-size: 0.6em;
+        padding: 3px 0 0 0.2em;
+    }
+
+    .hide-mobile a{
+        color: white;
+        text-decoration: none;
+        padding: 0.3em;
+        font-size: 0.8em;
+    }
+
+    .hide-mobile{
+        flex-basis: 30%;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        width: 100px;
+    }
+
+    .account{
+       display: flex;
+       justify-content: flex-end;
+    }
+
+    .account a{
+        font-size: 0.8em;
+    }
+
+    .desktop-nav{
+        margin-left: 40px;
+    }
+
+    i.fa-bars{
+        display: none;
+    }
+
+    section .box {
+        width: 60%;
+        padding: 3em 2em;
+    }
+}
+
+@media only screen and (min-width: 755px) {
+    section .box {
+        width: 60%;
+        padding: 3em 2em;
+    }
+}
+
+@media only screen and (min-width: 773px) {
+    .details{
+        margin: 2.5em auto 1em auto;
+    }
+
+    .details h1{
+        font-size: 1.6em;
+    }
+
+    .display{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .display2 {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 802px) {
+    form{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 881px) {
+    form{
+        width: 60%;
+    }
+
+    .why .container{
+        width: 80%;
+        margin: 1em auto;
+    }
+}
+
+@media only screen and (min-width: 940px) {
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .container{
+        display: flex;
+        align-items: center;
+        width: 85%;
+        margin: 4em auto 0 auto;
+        justify-content: space-between;
+    }
+
+    .details h1{
+        font-size: 1.4em;
+    }
+
+    .details{
+        text-align: left;
+    }
+
+    form{
+        padding: 3.5em 1.5em;
+        width: 58%;
+    }
+}
+
+@media only screen and (min-width: 953px) {
+    section .box {
+        width: 44%;
+        padding: 3em 2em;
+    }
+
+    .why-p{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .details h1{
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .account{
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1018px) {
+    .details h1{
+        font-size: 1.6em;
+        width: 75%;
+    }
+
+    form{
+        padding: 4em 1.5em;
+    }
+
+    .why-p {
+        width: 50%;
+    }
+}

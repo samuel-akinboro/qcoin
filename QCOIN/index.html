@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Qcoin</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    
+    <nav>
+        <div class="container">
+            <div class="mobile-nav">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.JPG" alt="logo"></a>
+                </div>
+                <i class="fas fa-bars"></i>
+                <div class="desktop-nav hide-mobile">
+                    <ul>
+                        <li><a href="#">Products</a> <i class="fas fa-chevron-down"></i></li>
+                        <li><a href="#">Company</a> <i class="fas fa-chevron-down"></i></li>
+                        <li><a href="#">Rates</a> <i class="fas fa-chevron-down"></i></li>
+                        <li><a href="#">Learn</a> <i class="fas fa-chevron-down"></i></li>
+                    </ul>
+                </div>
+                <div class="account hide-mobile">
+                    <a href="#">Sign in</a>
+                    <a href="#">Create Account</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-out">
+            <i class="fas fa-times"></i>
+            <ul>
+                <li><a href="#">Products</a> <i class="fas fa-chevron-down"></i></li>
+                <li><a href="#">Company</a> <i class="fas fa-chevron-down"></i></li>
+                <li><a href="#">Rates</a> <i class="fas fa-chevron-down"></i></li>
+                <li><a href="#">Learn</a> <i class="fas fa-chevron-down"></i></li>
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#">Create Account</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="details">
+                <h1>Buy, Bitcoin, Ethereum and
+                Other Crypto In Nigeria</h1>
+                <p>Easily buy, sell & trade different cryptocurrencies</p>
+                <a href="#">Create A Free Account</a>
+            </div>
+            <form action="">
+                <span>Send</span>
+                <div class="row">
+                    <div class="select">
+                        <select>
+                            <option value="Bitcoin">Bitcoin</option>
+                            <option value="Litecoin">Litecoin</option>
+                            <option value="Ethereum">Ethereum</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="$">
+                </div>
+
+                <span>Send</span>
+                <div class="row">
+                    <div class="select">
+                        <select>
+                            <option value="Bitcoin">Bitcoin</option>
+                            <option value="Litecoin">Litecoin</option>
+                            <option value="Ethereum">Ethereum</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="$">
+                </div>
+                <button type="submit" class="btn">
+                    Exchange Now <i class="fas fa-chevron-right"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <main class="why">
+        <div class="container">
+            <h2>Why Qcoin?</h2>
+            <p class="why-p">QCoin harnesses the power of cryptocurrency to create alternative solutions to financial
+            infrastructure, digital payments and global E-commerce.
+            Simple put, we’re making cryptocurrency cool again!
+            </p>
+            <a href="#" class="small-btn">buy</a> <a href="#">convert</a>
+
+            <div class="display">
+                <img src="img/phone.JPG" alt="">
+                <div class="description">
+                    <h2>Nigerias Best Indigenous
+                    Crypto Wallet</h2>
+                    <p>QCoin harnesses the power of cryptocurrency to create
+                    alternative solutions to financial infrastructure, digital
+                    payments and global E-commerce.Simple put, we’re making
+                    cryptocurrency cool again!</p>
+                </div>
+            </div>
+
+            <div class="display display2">
+                <img src="img/phone.JPG" alt="">
+                <div class="description">
+                    <h2>Nigerias Best Indigenous
+                        Crypto Wallet</h2>
+                    <p>QCoin harnesses the power of cryptocurrency to create
+                        alternative solutions to financial infrastructure, digital
+                        payments and global E-commerce.Simple put, we’re making
+                        cryptocurrency cool again!</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <Script>
+        let menu = document.querySelector(".fa-bars");
+        let slideOut = document.querySelector(".slide-out");
+        let closeBtn = document.querySelector(".fa-times");
+
+        menu.addEventListener("click", (e) => {
+            if (slideOut.style.right == "0px") {
+                slideOut.style.right = "-1000px";
+                e.preventDefault()
+            } else {
+                slideOut.style.right = "0px"
+                e.preventDefault()
+            }
+        })
+
+        closeBtn.addEventListener("click", (e) => {
+            slideOut.style.right = "-1000px";
+            e.preventDefault()
+        })
+    </Script>
+</body>
+</html>

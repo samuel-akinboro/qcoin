@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Qcoin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="mobile-nav">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.JPG" alt="logo"></a>
+                </div>
+                <i class="fas fa-bars"></i>
+                <div class="desktop-nav hide-mobile">
+                    <ul>
+                        <li><a href="#">Products</a> <i class="fas fa-chevron-down"></i></li>
+                        <li><a href="#">Company</a> <i class="fas fa-chevron-down"></i></li>
+                        <li><a href="#">Rates</a> <i class="fas fa-chevron-down"></i></li>
+                        <li><a href="#">Learn</a> <i class="fas fa-chevron-down"></i></li>
+                    </ul>
+                </div>
+                <div class="account hide-mobile">
+                    <a href="#">Sign in</a>
+                    <a href="#">Create Account</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-out">
+            <i class="fas fa-times"></i>
+            <ul>
+                <li><a href="#">Products</a> <i class="fas fa-chevron-down"></i></li>
+                <li><a href="#">Company</a> <i class="fas fa-chevron-down"></i></li>
+                <li><a href="#">Rates</a> <i class="fas fa-chevron-down"></i></li>
+                <li><a href="#">Learn</a> <i class="fas fa-chevron-down"></i></li>
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#">Create Account</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="box">
+            <div class="container">
+                <img src="img/confirm-email.JPG" alt="">
+                <h4 style="color: #1D3769;">Follow the link we sent to</h4>
+                <h4>jhonny@gmail.com</h4>
+                <p>Check your spam folder if you don’t see the
+                email immediately</p>
+                <a href="#" class="btn">I’ve Confirmed My Email</a>
+                <a href="#" class="btn2">RESEND EMAIL</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="box">
+            <div class="container">
+                <img src="img/lock.JPG" alt="">
+                <h4 style="color: #1D3769;">Forgot Your Password?</h4>
+                <p>Lets help you get right back in.</p>
+                <input type="email" placeholder="Email address">
+                <a href="#" class="btn">Continue</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="box more-height">
+            <div class="container">
+                <img src="img/success.JPG" alt="">
+                <h4 style="color: #1D3769;">Success!</h4>
+                <p>Your password has been reset.</p>
+                <a href="#" class="btn">Continue</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="box">
+            <div class="container">
+                <img src="img/success.JPG" alt="">
+                <h4 style="color: #1D3769;">Transaction Sucessful</h4>
+                <p>Your wallet has been funded with
+                <span>N400,000.00</span></p>
+                <p>Your new balance is
+                    <span>N500,000.00</span></p>
+                <a href="#" class="btn">Back to dashboard</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="box more-height">
+            <div class="container">
+                <img src="img/success.JPG" alt="">
+                <h4 style="color: #1D3769;">Thank You!</h4>
+                <p>Your email address has now been verified</p>
+                <a href="#" class="btn">Continue</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="box more-height">
+            <div class="container">
+                <img src="img/failed.JPG" alt="">
+                <h4 style="color: #1D3769;">Transaction not Successful</h4>
+                <p>There was an error and your transaction
+                could not be completed</p>
+                <a href="#" class="btn">Back to dashboard</a>
+            </div>
+        </div>
+    </section>
+
+    <Script>
+        let menu = document.querySelector(".fa-bars");
+        let slideOut = document.querySelector(".slide-out");
+        let closeBtn = document.querySelector(".fa-times");
+
+        menu.addEventListener("click",(e)=>{
+            if(slideOut.style.right == "0px"){
+                slideOut.style.right = "-1000px";
+                e.preventDefault()
+            }else{
+                slideOut.style.right = "0px"
+                e.preventDefault()
+            }
+        })
+
+        closeBtn.addEventListener("click", (e)=>{
+             slideOut.style.right = "-1000px";
+            e.preventDefault()
+        })
+    </Script>
+</body>
+</html>
